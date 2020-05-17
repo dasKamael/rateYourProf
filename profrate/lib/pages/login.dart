@@ -47,9 +47,8 @@ class _LoginState extends State<Login> {
                               Text(
                                 "Evaluation ausgefallen?",
                                 style: TextStyle(
-                                  fontSize: 18.0,
-                                  fontWeight: FontWeight.bold
-                                ),
+                                    fontSize: 18.0,
+                                    fontWeight: FontWeight.bold),
                               ),
                               SizedBox(height: 10.0),
                               Text(
@@ -98,12 +97,18 @@ class _LoginState extends State<Login> {
                         FlatButton(
                           color: Colors.red,
                           onPressed: () {},
-                          child: Text("Register", style: TextStyle(color: Colors.white),),
+                          child: Text(
+                            "Register",
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
                         FlatButton(
                           color: Colors.red,
-                          onPressed: () {},
-                          child: Text("Login", style: TextStyle(color: Colors.white)),
+                          onPressed: () {
+                            Navigator.pushNamed(context, "/chooseProf");
+                          },
+                          child: Text("Login",
+                              style: TextStyle(color: Colors.white)),
                         ),
                       ],
                     ),
