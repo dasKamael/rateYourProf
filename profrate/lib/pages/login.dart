@@ -78,15 +78,16 @@ class _LoginState extends State<Login> {
                         maxLength: 8,
                         maxLengthEnforced: true,
                         decoration: InputDecoration(
-                          hintText: 'Username',
+                          hintText: 'HDS-Kennung',
                         ),
                       ),
                     ),
                     Container(
                       width: 250,
                       child: TextField(
+                        obscureText: true,
                         decoration: InputDecoration(
-                          hintText: 'Password',
+                          hintText: 'Passwort',
                         ),
                       ),
                     ),
